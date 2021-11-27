@@ -1,0 +1,80 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-weight: 400;
+}
+p{
+    font-weight: 300;
+}
+.container{
+    margin: 110px auto;
+    width: 100%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* 
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+    El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
+    
+    Un área del documento que contiene un flexbox es llamada contendedor flex. Para crear un contenedor flex, establecemos la propiedad del área del contenedor display como flex o inline-flex. Tan pronto como hacemos esto, los hijos directos de este contenedor se vuelven ítems flex
+    
+    El resultado es que todos los ítems se alinearán en una solo fila, usando el tamaño del contenedor como su tamaño en el eje principal. Si hay más ítems de los que caben en el contenedor, estos no pasarán más abajo si no que sobrepasarán el margen. Si hay ítems más altos que otros, todos los ítems serán ajustados en el eje cruzado para alcanzar al mayor.
+
+    Para lograr repartirse en varias líneas añada la propiedad flex-wrap con el valor wrap. Cuando los ítems sean demasiados para desplegarlos en una línea, serán repartidos en la línea siguiente. El ejemplo en vivo de abajo contiene ítems que se les ha asignando un ancho, donde el ancho total de los ítems excede al del contenedor flex. Cuando flex-wrap se coloca como wrap, los ítems se repartirán. Al colocarlo como nowrap, el cual es el valor inicial, estos se contraerán para calzar con el contenedor ya que usan los valores iniciales de flexbox que permiten que los ítems se contraigan. Al usar nowrap los ítems podrían salirse del margen si estos no pudieran contraerse, o no contraerse lo suficiente para ser calzados.
+    */
+}
+
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: rgb(238,238,238);
+    color:#333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px #888;
+    width: 22%;
+    box-sizing: border-box;
+    /* 
+    https://developer.mozilla.org/es/docs/Web/CSS/box-sizing
+    border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra. Esto típicamente hace mucho más fácil dimensionar elementos. */
+}
+.precio{
+    font-size: 50px;
+    color:#00dac7;
+}
+
+.btn-precio{
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+}
+.btn-precio:hover{
+    background: rgb(97, 5, 59);
+}
+
+@media (max-width: 650px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+
+    }
+}
+    
+@media (max-width: 300px){
+    .columna{
+        width: 75%;
+        margin-bottom: 20px;
+
+    }
+}
